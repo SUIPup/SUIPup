@@ -6,67 +6,67 @@
   <title>Sui Pup 🐶💧</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: #fffef8;
-      color: #333;
       margin: 0;
       padding: 0;
-      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
     }
 
-    header {
-      background-color: #007aff;
-      color: white;
-      padding: 1.5em 1em;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .tagline {
-      font-size: 1em;
-      font-style: italic;
-      margin-top: 0.5em;
-    }
-
-    .section {
-      padding: 2em 1em;
-      max-width: 800px;
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
 
-    .comic {
-      background: #fff;
-      border: 2px dashed #ccc;
-      padding: 1em;
-      margin: 1em 0;
+    header {
+      background-color: #e3f2fd;
+      text-align: center;
     }
 
-    .pup-tip {
-      background: #f5faff;
-      border-left: 4px solid #007aff;
-      padding: 1em;
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
       font-style: italic;
-      margin: 1em 0;
+    }
+
+    #comic img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+
+    .tip {
+      background: #fff;
+      padding: 20px;
+      border-left: 6px solid #007aff;
+      border-radius: 8px;
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    .cta-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #007aff;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
-      background-color: #f2f2f2;
-      padding: 1em;
+      background-color: #fafafa;
+      text-align: center;
       font-size: 0.9em;
-    }
-
-    a {
-      color: #007aff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
+      color: #777;
     }
   </style>
 </head>
@@ -74,31 +74,40 @@
 
   <header>
     <h1>Sui Pup</h1>
-    <div class="tagline">The Meme Coin with a Lesson</div>
+    <p>The Meme Coin with a Lesson 🐶💧</p>
+    <img src="https://your-image-url.com/suipup-hero.png" alt="Sui Pup Hero Image" style="max-width: 200px; margin-top: 20px;">
   </header>
 
-  <div class="section">
-    <p>Welcome to Sui Pup — home of daily crypto comics, honest lessons, and NFT collectibles for the brave, broke, and building.</p>
+  <section id="about">
+    <h2>About Sui Pup</h2>
+    <p>Sui Pup was born from the ashes of failed FOMOs, revenge trades, and pump-and-dumps. He’s here to help retail traders survive crypto with comics, tips, and a wink. Every day, a new laugh—and maybe a lesson.</p>
+  </section>
 
-    <div class="comic">
-      <h2>🗓 Comic of the Day</h2>
-      <img src="https://your-image-link.com/todays-comic.jpg" alt="Comic of the Day">
-      <p><em>Today’s lesson: Don’t give your seed phrase to Mom!</em></p>
-    </div>
+  <section id="comic">
+    <h2>📚 Comic of the Day</h2>
+    <img src="https://your-image-url.com/comic1.jpg" alt="Comic of the Day">
+    <p><em>Today’s comic: “Don’t follow the candle—follow your gut.”</em></p>
+  </section>
 
-    <div class="pup-tip">
-      💡 Pup Tip: It’s not gambling if you believe… but maybe still don’t use rent money.
+  <section id="tip">
+    <h2>💡 Pup Tip</h2>
+    <div class="tip">
+      "If you wouldn’t explain the trade to your mom, maybe don’t make it."
     </div>
-  </div>
+  </section>
+
+  <section id="join">
+    <h2>Join the Pup Pack</h2>
+    <div class="cta-links">
+      <a href="https://x.com/suipuppy" target="_blank">🐦 Follow on X</a>
+      <a href="https://t.me/yourtelegram" target="_blank">💬 Join Telegram</a>
+      <a href="#" target="_blank">🎴 View NFTs</a>
+    </div>
+  </section>
 
   <footer>
-    <p>
-     <a href="https://x.com/suipuppy" target="_blank" rel="noopener noreferrer">🐦 Follow us on X</a> |
-      <a href="https://t.me/yourchannel" target="_blank">Telegram</a> |
-      <a href="#">NFT Collection</a> |
-      <a href="#">Whitepaper</a>
-    </p>
-    <p>Made with 💧 by the Sui Pup community</p>
+    <p>Made with 💧 by the SUI Pup community</p>
+    <p><a href="https://github.com/suipup/SUIPup" target="_blank">View on GitHub</a></p>
   </footer>
 
 </body>
