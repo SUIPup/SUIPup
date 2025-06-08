@@ -96,15 +96,40 @@
     </div>
   </section>
 
-  <section id="join">
-    <h2>Join the Pup Pack</h2>
-    <img src="https://raw.githubusercontent.com/SUIPup/SUIPup/refs/heads/main/2481B094-AB0A-4967-A3A1-BDA3CB4C6F21.png">
-    <div class="cta-links">
-      <a href="https://x.com/suipuppy" target="_blank">🐦 Follow on X</a>
-      <a href="https://t.me/yourtelegram" target="_blank">💬 Join Telegram</a>
-      <a href="#" target="_blank">🎴 View NFTs</a>
+ <section id="join" style="
+  position: relative;
+  width: 100%;
+  background: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/2481B094-AB0A-4967-A3A1-BDA3CB4C6F21.png') center center / cover no-repeat;
+  color: white;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+">
+
+  <!-- Overlay -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 0;
+  "></div>
+
+  <!-- Foreground content -->
+  <div style="position: relative; z-index: 1; text-align: center;">
+    <h2 style="font-size: 2em; margin-bottom: 20px;">Join the Pup Pack</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+      <a href="https://x.com/suipuppy" target="_blank" style="background: #1da1f2; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">🐦 Follow on X</a>
+
+      <a href="https://t.me/yourtelegram" target="_blank" style="background: #229ED9; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">💬 Join Telegram</a>
+
+      <a href="#" target="_blank" style="background: #7c4dff; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">🎴 View NFTs</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer>
     <p>Made with 💧 by the SUI Pup community</p>
