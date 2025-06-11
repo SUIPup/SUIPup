@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,7 +19,7 @@
     .bubble {
       position: absolute;
       bottom: -100px;
-      background: rgba(173, 216, 230, 0.4);  /* light blue bubble look */
+      background: rgba(173, 216, 230, 0.4);
       border-radius: 50%;
       animation: rise 20s infinite ease-in;
     }
@@ -35,11 +35,6 @@
       }
     }
 
-    section {
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
       margin: 0;
@@ -47,6 +42,11 @@
       font-family: 'Helvetica Neue', sans-serif;
       color: #333;
       line-height: 1.6;
+    }
+
+    section {
+      margin: 0;
+      padding: 0;
     }
 
     header, section, footer {
@@ -72,9 +72,9 @@
 
     #comic img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin: 20px 0;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
     }
 
     .tip {
@@ -134,9 +134,31 @@
       padding-top: 2rem;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
     }
+
+    #daily-comic {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: none;
+    }
+
+    #daily-comic img {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
+    }
+
+    #daily-comic h2,
+    #daily-comic p {
+      text-align: center;
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
+
+  <!-- BUBBLES -->
   <div class="bubbles">
     <div class="bubble" style="width: 40px; height: 40px; left: 20%; animation-delay: 0s;"></div>
     <div class="bubble" style="width: 25px; height: 25px; left: 40%; animation-delay: 3s;"></div>
@@ -145,26 +167,29 @@
     <div class="bubble" style="width: 35px; height: 35px; left: 70%; animation-delay: 4s;"></div>
   </div>
 
-  <section id="hero-banner" style="position: relative; text-align: center; margin: 0; padding: 0;">
+  <!-- HERO BANNER -->
+  <section id="hero-banner" style="position: relative; text-align: center;">
     <img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/E2DF9FCD-E298-40E1-AC97-61FFE5AD1B31.png"
          alt="Sui Pup Hero Banner"
          style="width: 100%; height: auto; border-radius: 0px; display: block;">
     <div class="hero-text">FOMO and YOLO Lessons</div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Sui Pup</h2>
     <p>Sui Pup was born from the ashes of failed FOMOs, revenge trades, and pump-and-dumps. He’s here to help retail traders survive crypto with comics, tips, and a wink. Every day, a new laugh—and maybe a lesson.</p>
   </section>
 
-  <section id="daily-comic" style="text-align: center; margin: 3rem 1rem;">
-    <h2 style="font-size: 1.8em; margin-bottom: 1rem;">🎴 Comic of the Day</h2>
+  <!-- COMIC OF THE DAY -->
+  <section id="daily-comic">
+    <h2>🎴 Comic of the Day</h2>
     <img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/F369098C-0640-4B90-870F-11F5F5A4E81E.png"
-         alt="Sui Pup Comic of the Day"
-         style="width: 100%; max-width: 480px; height: auto; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
-    <p style="font-size: 1em; color: #666; margin-top: 0.8rem;">New lesson posted daily by SP 🐶💧</p>
+         alt="Sui Pup Comic of the Day">
+    <p>New lesson posted daily by SP 🐶💧</p>
   </section>
 
+  <!-- TIP -->
   <section id="tip">
     <h2>💡 Pup Tip</h2>
     <div class="tip">
@@ -172,14 +197,16 @@
     </div>
   </section>
 
+  <!-- GAME BANNER -->
   <section id="pump-dump-banner">
     <div class="banner-text">🎮 PUMP or DUMP Game – Coming Soon!</div>
   </section>
 
-  <section id="join" style="position: relative; width: 100%; background: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/2481B094-AB0A-4967-A3A1-BDA3CB4C6F21.png') center center / cover no-repeat; color: white; padding: 60px 20px; box-sizing: border-box; overflow: hidden;">
+  <!-- JOIN SECTION -->
+  <section id="join" style="position: relative; background: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/2481B094-AB0A-4967-A3A1-BDA3CB4C6F21.png') center center / cover no-repeat; color: white; padding: 60px 20px;">
     <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.6); z-index: 0;"></div>
     <div style="position: relative; z-index: 1; text-align: center;">
-      <h2 style="font-size: 2em; margin-bottom: 20px;">Join the Pup Pack</h2>
+      <h2>Join the Pup Pack</h2>
       <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
         <a href="https://x.com/suipuppy" target="_blank" style="background: #1da1f2; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">🐦 Follow on X</a>
         <a href="https://t.me/yourtelegram" target="_blank" style="background: #229ED9; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">💬 Join Telegram</a>
@@ -188,19 +215,21 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>Made with 💧 by the SUI Pup community</p>
     <p><a href="https://github.com/suipup/SUIPup" target="_blank">View on GitHub</a></p>
   </footer>
 
+  <!-- BUY BUTTON -->
   <div class="buy-sui-pup">
-    <a href="https://movepump.com/token/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4::suipup::SUIPUP"
-       target="_blank"
+    <a href="https://movepump.com/token/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4::suipup::SUIPUP" target="_blank"
        style="position: fixed; bottom: 20px; right: 20px; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); z-index: 9999; background: white;">
       <img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/SP-Buy.png"
            alt="Buy SUI Pup"
            style="width: 100%; height: 100%; object-fit: cover;">
     </a>
   </div>
+
 </body>
 </html>
