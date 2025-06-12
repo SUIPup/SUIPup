@@ -53,7 +53,7 @@ max-width: 100%;
 
 header, section, footer {
 padding: 40px 20px;
-max-width: 900px;
+max-width: 100%;
 margin: auto;
 }
 
@@ -87,7 +87,7 @@ padding: 20px;
 border-left: 6px solid #007aff;
 border-radius: 8px;
 font-style: italic;
-margin-top: 20px;
+margin-top: 10px;
 }
 
 .cta-links a {
@@ -108,14 +108,29 @@ font-size: 0.9em;
 color: #777;
 }
 
+#hero-banner {
+position: relative;
+margin: 0;
+padding: 0;
+max-width: 100%;
+overflow: hidden;
+}
+
+#hero-banner img {
+width: 100%;
+height: auto;
+display: block;
+}
+
 .hero-text {
 position: absolute;
-bottom: 5%;
+bottom: 20px; /* adjust to move up/down */
 left: 50%;
 transform: translateX(-50%);
-width: 90%;
 color: white;
-text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+font-size: 1.8rem;
+font-weight: bold;
+text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 #pump-dump-banner {
@@ -126,9 +141,10 @@ height: 80vh;
 display: flex;
 justify-content: center;
 align-items: flex-end;
-padding: 2rem;
+padding: 0;
 text-align: center;
-margin-top: 1rem;
+margin: 0;
+  max-width: 100%;
   position: relative;
 }
 
@@ -136,7 +152,7 @@ margin-top: 1rem;
 color: white;
 font-size: 1.6rem;
 font-weight: bold;
-padding-top: 1.5rem;
+padding: 0;
 text-shadow:5 0 2px 6px rgba(0, 0, 0, 0.6);
   width: 100;
   text-align: center;
@@ -164,7 +180,7 @@ margin: 0;
 #daily-comic h2,
 #daily-comic p {
 text-align: center;
-margin: 1rem 0;
+margin: 0;
 }
 </style>
 </head>
@@ -180,13 +196,10 @@ margin: 1rem 0;
 </div>
 
 <!-- HERO BANNER -->
-<section id="hero-banner" style="position: relative; text-align: center;">
+<section id="hero-banner">
 <img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/E2DF9FCD-E298-40E1-AC97-61FFE5AD1B31.png"
-alt="Sui Pup Hero Banner"
-style="width: 100%; height: auto; border-radius: 0px; display: block;">
-<div class="hero-text">FOMO and YOLO Lessons</div>
-</section>
-
+alt="Sui Pup Hero Banner">
+  
 <!-- ABOUT -->
 <section id="about">
 <h2>About Sui Pup</h2>
