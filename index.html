@@ -47,6 +47,8 @@ line-height: 1.6;
 section {
 margin: 0;
 padding: 0;
+width: 100%;
+max-width: 100%;
 }
 
 header, section, footer {
@@ -72,6 +74,8 @@ font-style: italic;
 
 #comic img {
 width: 100%;
+  height: auto;
+  display: block;
 border-radius: 0;
 box-shadow: none;
 margin: 0;
@@ -121,18 +125,26 @@ background-position: center;
 height: 80vh;
 display: flex;
 justify-content: center;
-align-items: flex-start;
+align-items: flex-end;
 padding: 2rem;
 text-align: center;
 margin-top: 1rem;
+  position: relative;
 }
 
 .banner-text {
 color: white;
-font-size: 2.5rem;
+font-size: 1.6rem;
 font-weight: bold;
-padding-top: 2rem;
-text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+padding-top: 1.5rem;
+text-shadow:5 0 2px 6px rgba(0, 0, 0, 0.6);
+  width: 100;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 #daily-comic {
@@ -198,10 +210,10 @@ alt="Sui Pup Comic of the Day">
 </section>
 
 <!-- GAME BANNER -->
-<section id="pump-dump-banner">
+<section id="pump-dump-banner" style="position: relative;">
 <div class="banner-text">🎮 PUMP or DUMP Game – Coming Soon!</div>
 </section>
-
+  
 <!-- JOIN SECTION -->
 <section id="join" style="position: relative; background: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/2481B094-AB0A-4967-A3A1-BDA3CB4C6F21.png') center center / cover no-repeat; color: white; padding: 60px 20px;">
 <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.6); z-index: 0;"></div>
