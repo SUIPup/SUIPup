@@ -19,10 +19,17 @@ overflow: hidden;
 .bubble {
 position: absolute;
 bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
 background: rgba(173, 216, 230, 0.4);
 border-radius: 50%;
 animation: rise 20s infinite ease-in;
+  pointer-events: none;
 }
+  body > *:not(.bubbles) {
+    position: relative;
+    z-index: 1;
+  }
 
 @keyframes rise {
 0% {
