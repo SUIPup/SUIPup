@@ -4,97 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SUI Pup</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: url('DA9C7B89-7AFE-429F-93DB-C486F1992E71.png') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5); /* Optional: softens image so text is readable */
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    a.button {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #007aff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    .floating-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00cc66;
-      color: white;
-      padding: 1rem 1.4rem;
-      font-size: 1rem;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      z-index: 10;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.6rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-      
-      .floating-button {
-        font-size: 0.9rem;
-        padding: 0.8rem 1.2rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="overlay"></div>
 
-  <div class="container">
-    <h1>Welcome to the SUI Pup Universe 🐾</h1>
-    <p>Follow our journey, collect your favorite moments, and join the most loyal community on-chain.</p>
+  <!-- Main Background Section -->
+  <div class="hero" id="main-bg"></div>
 
-    <a class="button" href="https://bit.ly/JoinSuiPup" target="_blank">Join Telegram</a>
-    <a class="button" href="https://dexscreener.com/sui/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4" target="_blank">Chart</a>
-    <a class="button" href="https://suivision.xyz/token/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4::suipup::SUIPUP" target="_blank">Token Info</a>
+  <!-- Floating Join Button -->
+  <a href="#join" class="join-button">
+    <img src="4E84B89D-0A01-4170-9C40-5A06F7C1DBB1.png" alt="Join Here" />
+  </a>
+
+  <!-- Content Section (can be expanded) -->
+  <section class="content">
+    <h1>Welcome to the SUI Pup Community</h1>
+    <p>Crypto wisdom. Degen energy. Ghibli vibes. You in?</p>
+  </section>
+
+  <!-- Bottom Background Image -->
+  <div class="bottom-bg">
+    <img src="F40437A4-9766-468F-9416-297A66574042.png" alt="Group Looking Right" />
   </div>
 
-  <a class="floating-button" href="https://bit.ly/JoinSuiPup" target="_blank">Buy $SUIPUP</a>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-buttons">
+      <a href="https://t.me/YOUR_LINK" target="_blank">Telegram</a>
+      <a href="https://x.com/YOUR_LINK" target="_blank">X</a>
+      <a href="#nfts">NFTs (soon!)</a>
+    </div>
+  </footer>
+
 </body>
 </html>
-
