@@ -1,328 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sui Pup 🐶💧</title>
-<style>
-/* BUBBLES BACKGROUND */
-.bubbles {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: -1;
-overflow: hidden;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SUI Pup</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: url('DA9C7B89-7AFE-429F-93DB-C486F1992E71.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
 
-.bubble {
-position: absolute;
-bottom: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-background: rgba(173, 216, 230, 0.4);
-border-radius: 50%;
-animation: rise 20s infinite ease-in;
-  pointer-events: none;
-}
-  body > *:not(.bubbles) {
-    position: relative;
-    z-index: 1;
-  }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* Optional: softens image so text is readable */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
-@keyframes rise {
-0% {
-transform: translateY(0) scale(1);
-opacity: 0.6;
-}
-100% {
-transform: translateY(-110vh) scale(1.5);
-opacity: 0;
-}
-}
+    .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
 
-body {
-background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
-margin: 0;
-padding: 0;
-font-family: 'Helvetica Neue', sans-serif;
-color: #333;
-line-height: 1.6;
-}
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
 
-section {
-margin: 0;
-padding: 0;
-width: 100%;
-max-width: 100%;
-}
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
 
-header, section, footer {
-padding: 40px 20px;
-max-width: 100%;
-margin: auto;
-}
+    a.button {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #007aff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
 
-header {
-background-color: #e3f2fd;
-text-align: center;
-}
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00cc66;
+      color: white;
+      padding: 1rem 1.4rem;
+      font-size: 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
 
-header h1 {
-margin-bottom: 10px;
-font-size: 2.5em;
-}
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
 
-header p {
-font-size: 1.2em;
-font-style: italic;
-}
-
-.about-section {
-background-image: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/A9E7824E-0385-4525-B3B7-B04DC5BD9FFD.png');
-background-size: cover;
-background-position: center;
-width: 100%;
-  margin: 0;
-padding: 0px 0px;
-text-align: center;
-color: white;
-}
-
-.about-content {
-max-width: 100%;
-margin: 0 auto;
-background-color: rgba(0, 0, 0, 0.5);
-padding: 2rem;
-border-radius: 12px;
-max-width: 100%;
-  margin: 0 auto;
-}
-
-.about-content p {
-font-size: 1.2rem;
-line-height: 1.8;
-}
-  
-#comic img {
-width: 100%;
-  height: auto;
-  display: block;
-border-radius: 0;
-box-shadow: none;
-margin: 0;
-}
-
-.tip {
-background: #fff;
-padding: 20px;
-border-left: 6px solid #007aff;
-border-radius: 8px;
-font-style: italic;
-margin-top: 10px;
-}
-
-.cta-links a {
-display: inline-block;
-margin: 10px;
-padding: 12px 20px;
-background: #007aff;
-color: white;
-border-radius: 30px;
-text-decoration: none;
-font-weight: bold;
-}
-
-footer {
-background-color: #fafafa;
-text-align: center;
-font-size: 0.9em;
-color: #777;
-}
-
-#hero-banner {
-position: relative;
-margin: 0;
-padding: 0;
-max-width: 100%;
-overflow: hidden;
-}
-
-#hero-banner img {
-width: 100%;
-height: auto;
-display: block;
-}
-
-.hero-text {
-position: absolute;
-bottom: 20px; /* adjust to move up/down */
-left: 50%;
-transform: translateX(-50%);
-color: white;
-font-size: 1.8rem;
-font-weight: bold;
-text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-#pump-dump-banner {
-background-image: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/2CFE7D96-70EC-481B-9A0F-89DD02EE62ED.png?raw=true');
-background-size: cover;
-background-position: center;
-height: 80vh;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-padding: 0;
-text-align: center;
-margin: 0;
-  max-width: 100%;
-  position: relative;
-}
-
-.banner-text {
-color: white;
-font-size: 1.6rem;
-font-weight: bold;
-padding: 0;
-text-shadow:5 0 2px 6px rgba(0, 0, 0, 0.6);
-  width: 100;
-  text-align: center;
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-#daily-comic {
-margin: 0;
-padding: 0;
-width: 100%;
-max-width: none;
-}
-
-#daily-comic img {
-width: 100%;
-border-radius: 0;
-box-shadow: none;
-margin: 0;
-}
-
-#daily-comic h2,
-#daily-comic p {
-text-align: center;
-margin: 0;
-}
-  #footer-qr img {
-max-width: 100%;
-height: auto;
-display: block;
-margin-bottom: 1rem;
-border-radius: 16px;
-}
-
-#footer-qr h3 {
-font-size: 1.5rem;
-margin-bottom: 0.5rem;
-}
-
-#footer-qr a {
-font-size: 1.1rem;
-color: #1da1f2;
-font-weight: bold;
-  
-}  
-</style>
+      p {
+        font-size: 1rem;
+      }
+      
+      .floating-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="overlay"></div>
 
-<!-- BUBBLES -->
-<div class="bubbles">
-<div class="bubble" style="width: 40px; height: 40px; left: 20%; animation-delay: 0s;"></div>
-<div class="bubble" style="width: 25px; height: 25px; left: 40%; animation-delay: 3s;"></div>
-<div class="bubble" style="width: 50px; height: 50px; left: 60%; animation-delay: 5s;"></div>
-<div class="bubble" style="width: 20px; height: 20px; left: 80%; animation-delay: 1s;"></div>
-<div class="bubble" style="width: 35px; height: 35px; left: 70%; animation-delay: 4s;"></div>
-</div>
+  <div class="container">
+    <h1>Welcome to the SUI Pup Universe 🐾</h1>
+    <p>Follow our journey, collect your favorite moments, and join the most loyal community on-chain.</p>
 
-<!-- HERO BANNER -->
-<section id="hero-banner">
-<img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/E2DF9FCD-E298-40E1-AC97-61FFE5AD1B31.png"
-alt="Sui Pup Hero Banner">
-  
-<!-- ABOUT -->
-<section class="about-section">
-<div class="about-content">
-<p>
-Sui Pup was born from the ashes of failed FOMOs, revenge trades, and pump-and-dumps.
-He’s here to help retail traders survive crypto with comics, tips, and a wink.
-Every day, a new laugh—and maybe a lesson.
-</p>
-</div>
-</section>
-  
-<!-- COMIC OF THE DAY -->
-<section id="daily-comic">
-<h2>🎴 Comic of the Day</h2>
-<img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/F369098C-0640-4B90-870F-11F5F5A4E81E.png"
-alt="Sui Pup Comic of the Day">
-<p>New lesson posted daily by SP 🐶💧</p>
-</section>
+    <a class="button" href="https://bit.ly/JoinSuiPup" target="_blank">Join Telegram</a>
+    <a class="button" href="https://dexscreener.com/sui/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4" target="_blank">Chart</a>
+    <a class="button" href="https://suivision.xyz/token/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4::suipup::SUIPUP" target="_blank">Token Info</a>
+  </div>
 
-<!-- TIP -->
-<section id="tip">
-<h2>💡 Pup Tip</h2>
-<div class="tip">
-"If you wouldn’t explain the trade to your mom, maybe don’t make it."
-</div>
-</section>
-
-<!-- GAME BANNER -->
-<section id="pump-dump-banner" style="position: relative;">
-<div class="banner-text">🎮 PUMP or DUMP Game – Coming Soon!</div>
-</section>
-  
-<!-- JOIN SECTION -->
-<section id="join" style="position: relative; background: url('https://raw.githubusercontent.com/SUIPup/SUIPup/main/2481B094-AB0A-4967-A3A1-BDA3CB4C6F21.png') center center / cover no-repeat; color: white; padding: 60px 20px;">
-<div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.6); z-index: 0;"></div>
-<div style="position: relative; z-index: 1; text-align: center;">
-<h2>Join the Pup Pack</h2>
-<div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
-<a href="https://x.com/suipuppy" target="_blank" style="background: #1da1f2; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">🐦 Follow on X</a>
-<a href="https://t.me/yourtelegram" target="_blank" style="background: #229ED9; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">💬 Join Telegram</a>
-<a href="#" target="_blank" style="background: #7c4dff; padding: 12px 24px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">🎴 View NFTs (Soon!)</a>
-</div>
-</div>
-</section>
-  
-<section id="footer-qr" style="text-align: center; padding: 2rem 1rem; background-color: #f0faff;">
-<h3 style="font-size: 1.6rem; color: #222;">Join SUI Pup Telegram</h3>
-<img
-src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/IMG_4946.jpeg"
-alt="Join our Telegram"
-style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
-/><p style="font-weight: bold; margin-top: 0.8rem;">
-<a href="https://t.me/SUI_PUP" target="_blank">
-  <img 
-    src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/CB444555-8CD1-4512-99BE-6445B7885B71.jpeg"
-    alt="Join SUI Pup Telegram"
-    style="width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" 
-  />
-</a>
-</p>
-</section>  <!-- FOOTER -->
-  
-<!-- BUY BUTTON -->
-<div class="buy-sui-pup">
-<a href="https://movepump.com/token/0x11d81a288f4ee5f83d8ddf253041192941800caa439f5ef02cb5d2ed0082a3a4::suipup::SUIPUP" target="_blank"
-style="position: fixed; bottom: 20px; right: 20px; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); z-index: 9999; background: white;">
-<img src="https://raw.githubusercontent.com/SUIPup/SUIPup/main/SP-Buy.png"
-alt="Buy SUI Pup"
-style="width: 100%; height: 100%; object-fit: cover;">
-</a>
-</div>
-
+  <a class="floating-button" href="https://bit.ly/JoinSuiPup" target="_blank">Buy $SUIPUP</a>
 </body>
 </html>
+
