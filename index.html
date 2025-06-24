@@ -1,1 +1,38 @@
+<!-- Button Container -->
+<div class="join-button-container">
+  <a href="https://bit.ly/JoinSuiPup" target="_blank">
+    <img
+      src="images/96758AB7-0746-4105-8C68-2243E6EB2B4B.PNG"
+      alt="Join Community Button"
+      class="join-button"
+    />
+  </a>
+</div>
 
+<!-- CSS -->
+<style>
+  .join-button-container {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .join-button {
+    max-width: 320px;
+    width: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 174, 255, 0.3);
+    cursor: pointer;
+  }
+
+  .join-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 24px rgba(0, 174, 255, 0.6);
+  }
+
+  @media (max-width: 480px) {
+    .join-button {
+      max-width: 90%;
+    }
+  }
+</style>
