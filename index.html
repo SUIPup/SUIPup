@@ -1,45 +1,62 @@
-<!-- JOIN COMMUNITY BUTTON SECTION -->
-<div class="join-section">
-  <a href="https://bit.ly/JoinSuiPup" target="_blank" class="join-link">
-    <img
-      src="images/96758AB7-0746-4105-8C68-2243E6EB2B4B.PNG"
-      alt="Join Community Button"
-      class="join-image"
-    />
-  </a>
-</div>
-
-<style>
-  .join-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    background: transparent;
-  }
-
-  .join-link {
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  .join-image {
-    width: 100%;
-    max-width: 360px;
-    border-radius: 16px;
-    box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
-    transition: all 0.25s ease;
-    cursor: pointer;
-  }
-
-  .join-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 200, 255, 0.6);
-  }
-
-  @media (max-width: 480px) {
-    .join-image {
-      max-width: 90%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sui Pup</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fff;
+      text-align: center;
     }
-  }
-</style>
+
+    .top-banner {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .join-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 100px;
+      z-index: 999;
+    }
+
+    .join-button:hover::after {
+      content: 'Join community!';
+      position: absolute;
+      bottom: 110%;
+      right: 0;
+      background-color: #000;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    .comic-banner {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Forest Banner -->
+  <img src="DA9C7B89-7AFE-429F-93DB-C486F1992E71.png" alt="Top Banner" class="top-banner" />
+
+  <!-- Join Button -->
+  <a href="https://bit.ly/JoinSuiPup" target="_blank">
+    <img src="96758AB7-0746-4105-8C68-2243E6EB2B4B.PNG" alt="Join Button" class="join-button" />
+  </a>
+
+  <!-- Bottom Living Room Banner -->
+  <img src="F40437A4-9766-468F-9416-297A66574042.png" alt="Bottom Comic" class="comic-banner" />
+
+</body>
+</html>
