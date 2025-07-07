@@ -48,6 +48,21 @@ body {
   border: 1px solid #ccc;
 }
 
+#suipup-generator {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+#canvas {
+  width: 100%;
+  height: auto;
+  max-width: 512px;
+  display: block;
+  margin: 0 auto;
+}
+
 #suipup-generator input,
 #suipup-generator button {
   margin: 0.5rem;
