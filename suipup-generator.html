@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SUI Pup Generator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #f3f3f3;
+      margin: 0;
+      padding: 2rem;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      margin-top: 1rem;
+    }
+    input, button {
+      margin: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>SUI Pup Generator 🐶</h1>
+  <p>Add your name or handle below and generate your own custom SUI Pup image to flex on X and TG!</p>
+  <input type="text" id="customText" placeholder="@YourHandle" maxlength="20"/>
+  <br>
+  <button onclick="generateImage()">Generate</button>
+  <button onclick="downloadImage()">Download</button>
+  <br>
+  <canvas id="canvas" width="512" height="512"></canvas>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    const baseImage = new Image();
+    baseImage.crossOrigin = "Anonymous";
+    baseImage.src = "https://suipup.github.io/SUIPup/assets/sp_base.png";
+
+    baseImage.onload = function () {
+      ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+    };
+
+    function generateImage() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+
+      const text = document.getElementById("customText").value;
+      ctx.font = "28px Arial";
+      ctx.fillStyle = "#ffffff";
+      ctx.strokeStyle = "#000000";
+      ctx.lineWidth = 3;
+      ctx.textAlign = "center";
+      ctx.strokeText(text, canvas.width / 2, 470);
+      ctx.fillText(text, canvas.width / 2, 470);
+    }
+
+    function downloadImage() {
+      const link = document.createElement("a");
+      link.download = "suipup_custom.png";
+      link.href = canvas.toDataURL();
+      link.click();
+    }
+  </script>
+</body>
+</html>
