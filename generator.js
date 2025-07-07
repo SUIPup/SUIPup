@@ -1,9 +1,17 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const baseImage = new Image();
-baseImage.src = 'images/sp_base.png';
+baseImage.src = 'images/sp_base.png';  // adjust path if needed
+
+let imageReady = false;
+baseImage.onload = () => imageReady = true;
 
 function generateImage() {
+  if (!imageReady) {
+    alert("Image is still loading, please wait!");
+    return;
+  }
+
   const handle = document.getElementById('handleInput').value.trim() || '@SuiPup';
   const bgColor = document.getElementById('bgColorPicker').value;
 
