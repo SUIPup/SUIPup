@@ -36,6 +36,32 @@ body {
   background: #ffe066;
 }
 
+#suipup-generator {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fef6e4;
+}
+
+#suipup-generator canvas {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+#suipup-generator input,
+#suipup-generator button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  #suipup-generator canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* Footer */
 .footer {
   text-align: center;
