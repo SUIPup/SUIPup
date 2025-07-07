@@ -27,7 +27,18 @@
   <section class="section">
     <img src="CF8D9B43-EBBD-4745-9832-8BCF43AAE739.png" alt="SP Pilot" class="full-img" />
   </section>
-
+  
+<section id="suipup-generator">
+  <h2>Create Your Own SUI Pup 🐶</h2>
+  <input type="text" id="handleInput" placeholder="@YourHandle" />
+  <input type="color" id="bgColorPicker" value="#f4e7cd" />
+  <button onclick="generateImage()">Generate</button>
+  <br />
+  <canvas id="canvas" width="512" height="768"></canvas>
+  <br />
+  <button onclick="downloadImage()">Download</button>
+</section>
+  
   <!-- Floating Purchase Button -->
   <a href="#purchase" class="purchase-btn">🚀 Buy Now</a>
 
@@ -37,6 +48,6 @@
     <a href="https://t.me/SUIPupLounge">Telegram</a>
     <a href="https://x.com/SUIPuppy">X</a>
   </footer>
-
+<script src="generator.js"></script>
 </body>
 </html>
