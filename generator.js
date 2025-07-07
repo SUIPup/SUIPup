@@ -4,8 +4,17 @@ const baseImage = new Image();
 baseImage.src = 'sp_base.PNG'; // match EXACT case
 
 let imageReady = false;
-baseImage.onload = () => imageReady = true;
-
+baseImage.onload = () => {
+  imageReady = true;
+  // Draw default version on load
+  ctx.fillStyle = '#f4e7cd';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#000";
+  ctx.font = "bold 32px sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText("@SuiPup", canvas.width / 2, canvas.height - 40);
+};
 function generateImage() {
   if (!imageReady) {
     alert("Image is still loading, please wait!");
