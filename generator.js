@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const baseImage = new Image();
-baseImage.src = 'sp_base.PNG';  // adjust path if needed
+baseImage.src = 'sp_base.PNG'; // match EXACT case
 
 let imageReady = false;
 baseImage.onload = () => imageReady = true;
