@@ -16,6 +16,11 @@ body {
   display: block;
   height: auto;
 }
+.bottom-image {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
 /* Floating Purchase Button */
 .purchase-btn {
