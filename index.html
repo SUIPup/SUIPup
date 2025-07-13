@@ -124,6 +124,11 @@
   <div class="copy-section">
     © 2025 SUI Pup. All rights reserved.
   </div>
-
+<script>
+  const dateElem = document.getElementById("comic-date");
+  const today = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  dateElem.textContent = `Comic of the Day – ${today.toLocaleDateString('en-US', options)}`;
+</script>
 </body>
 </html>
