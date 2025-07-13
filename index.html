@@ -1,158 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SUI Pup – The People's Token</title>
-  <link rel="icon" type="image/x-icon" href="IMG_5355.ico">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Brandon+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Brandon+Grotesque&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      background-color: #f4e7cd;
+      font-family: 'Brandon Grotesque', sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: 'Brandon Grotesque', sans-serif;
-      background-color: #f4e7cd;
-      color: #1c1c1c;
       overflow-x: hidden;
-      text-align: center;
-      padding-bottom: 100px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    .full-img {
+      width: 100%;
       display: block;
-      margin: auto;
     }
 
-    .section {
-      margin: 40px auto;
-      padding: 0 20px;
+    .comic-section {
+      text-align: center;
+      padding: 20px 0;
     }
 
-    .comic-of-day {
-      max-width: 400px;
-      margin: 30px auto;
-      border: 4px solid #d2b48c;
-      background: #fff9f0;
-      padding: 10px;
+    .comic-card {
+      border: 2px solid #d4b66d;
+      padding: 12px;
+      background-color: #fff8e1;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .comic-card img {
+      width: 100%;
+      border-radius: 6px;
     }
 
     .comic-label {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-top: 10px;
+      font-size: 18px;
+      margin: 10px 0 4px;
+      color: #333;
     }
 
-    .buy-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #0088cc;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 30px;
-      font-weight: bold;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      z-index: 999;
+    .readmore {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 15px;
       text-decoration: none;
-    }
-
-    footer {
-      background: #e0d2b7;
-      padding: 20px;
-      margin-top: 60px;
-      border-top: 3px solid #d2b48c;
-      position: relative;
+      color: #337ab7;
     }
 
     .footer-links {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
+      gap: 20px;
+      padding: 30px 0;
     }
 
-    .footer-links a img {
+    .footer-links img {
       width: 40px;
       height: 40px;
     }
 
-    .sp-sleeping {
-      position: absolute;
-      left: 20px;
-      bottom: 10px;
-      width: 80px;
+    .copy-section {
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+      color: #444;
     }
 
-    @media (max-width: 600px) {
-      .footer-links {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .comic-of-day {
-        max-width: 90%;
+    @media (max-width: 768px) {
+      .comic-card {
+        margin: 0 15px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <div class="section">
-    <img src="sphowl.PNG" alt="SP Howling at the SUI Moon">
-  </div>
+  <!-- 🟡 Hero Banner -->
+  <img src="sphowl.PNG" alt="Hero Banner" class="full-img" />
 
-  <!-- COMIC OF THE DAY -->
-  <div class="comic-of-day">
-    <img src="spcomic1" alt="Comic of the Day">
-    <div class="comic-label">Comic of the Day – July 12, 2025</div>
-    <a href="https://x.com/SUIPuppy" target="_blank">Read more on X</a>
-  </div>
-
-  <!-- STEP-BY-STEP SECTION -->
-  <div class="section">
-    <img src="spstep1" alt="Step 1: Go to Slush Wallet">
-    <img src="spstep2" alt="Step 2: Visit MovePump">
-    <img src="spstep3" alt="Step 3: Search SUI Puppy">
-    <img src="sphow" alt="Step 4: Token Listing">
-  </div>
-
-  <!-- TOKENOMICS -->
-  <div class="section">
-    <img src="sptoken" alt="Tokenomics Chalkboard">
-  </div>
-
-  <!-- ROADMAP -->
-  <div class="section">
-    <img src="spQ4" alt="Q4 2025 Roadmap">
-    <img src="spQ1" alt="Q1 2026 Roadmap">
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <img src="spfooter" alt="SP sleeping" class="sp-sleeping">
-    <div class="footer-links">
-      <a href="https://t.me/suipupdawghaus" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-      </a>
-      <a href="https://x.com/SUIPuppy" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" alt="X">
-      </a>
-      <a href="https://movepump.com/" target="_blank">
-        <img src="https://movepump.com/favicon.ico" alt="MovePump">
-      </a>
+  <!-- 🟠 Comic of the Day -->
+  <section class="comic-section">
+    <div class="comic-card">
+      <img src="spcomicofday .PNG" alt="Comic of the Day">
+      <div class="comic-label">Comic of the Day – July 12, 2025</div>
+      <a class="readmore" href="https://x.com/SUIPuppy" target="_blank">Read more on X</a>
     </div>
-  </footer>
+  </section>
 
-  <!-- BUY BUTTON -->
-  <a class="buy-button" href="https://movepump.com/" target="_blank">BUY $SUIPUP</a>
+  <!-- 🔵 How to Get Tokens -->
+  <img src="spstep1.PNG" class="full-img" alt="Step 1" />
+  <img src="spstep2.PNG" class="full-img" alt="Step 2" />
+  <img src="spstep3.PNG" class="full-img" alt="Step 3" />
+  <img src="sphowl.PNG" class="full-img" alt="How to Buy" />
+  <img src="sptoken.PNG" class="full-img" alt="Tokenomics" />
+
+  <!-- 🟣 Roadmap -->
+  <img src="sproadmap2 .PNG" class="full-img" alt="Roadmap" />
+
+  <!-- 🔥 Footer Comic -->
+  <img src="spfooter.PNG" class="full-img" alt="Footer Comic" />
+
+  <!-- 🟢 Footer Links -->
+  <div class="footer-links">
+    <a href="https://x.com/SUIPuppy" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png" alt="X" /></a>
+    <a href="https://t.me/suipupdawghaus" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" alt="Telegram" /></a>
+    <a href="https://movepump.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/link--v1.png" alt="MovePump" /></a>
+  </div>
+
+  <div class="copy-section">
+    © 2025 SUI Pup. All rights reserved.
+  </div>
 
 </body>
 </html>
