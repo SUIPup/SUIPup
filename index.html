@@ -4,253 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SUI Pup – The People's Token</title>
-  <link rel="icon" type="image/x-icon" href="IMG_5355.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Brandon+Grotesque&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      background-color: #f4e7cd;
-      font-family: 'Brandon Grotesque', sans-serif;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-    .hero-tagline {
-      font-size: 28px;
-      font-weight: bold;
-      text-align: center;
-      color: #3b2c1e;
-      padding: 30px 20px 10px;
-      letter-spacing: 0.5px;
-    }
-
-    .full-img {
-      width: 100%;
-      display: block;
-    }
-
-    .comic-section {
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .comic-card {
-      border: 2px solid #d4b66d;
-      padding: 12px;
-      background-color: #fff8e1;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .comic-card img {
-      width: 100%;
-      border-radius: 6px;
-    }
-
-    .comic-label {
-      font-size: 18px;
-      margin: 10px 0 4px;
-      color: #333;
-    }
-
-    .readmore {
-      display: inline-block;
-      margin-top: 6px;
-      font-size: 15px;
-      text-decoration: none;
-      color: #337ab7;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 30px 0;
-    }
-
-    .footer-links img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .copy-section {
-      background-color: #fff;
-      padding: 10px;
-      text-align: center;
-      font-size: 13px;
-      color: #444;
-    }
-
-    .floating-join-btn {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background-color: #ffcc66;
-      color: #000;
-      padding: 12px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
-      z-index: 9999;
-    }
-
-    .floating-join-btn:hover {
-      background-color: #f4b942;
-    }
-
-    /* 🔔 Popup Styles */
-    .popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      overflow: hidden;
-    }
-
-    .popup-blur {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      backdrop-filter: blur(8px);
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    }
-
-    .popup-content {
-      position: relative;
-      z-index: 2;
-      width: 90vw;
-      max-width: 460px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-      background: #f4e7cd;
-    }
-
-    .popup-content img {
-      display: block;
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-    }
-
-    .popup-close {
-      position: absolute;
-      top: 8px;
-      right: 10px;
-      background: #fff;
-      border: none;
-      font-size: 20px;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      z-index: 3;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    body.popup-active {
-      overflow: hidden;
-    }
-  </style>
 </head>
-
 <body>
-  <!-- 🔥 Tagline -->
-  <div class="hero-tagline">
-    The people’s token. The internet’s pup. 🐾
+
+<!-- 🔥 Tagline -->
+<div class="hero-tagline">
+  The people’s token. The internet’s pup. 🐾
+</div>
+
+<!-- 🟡 Hero Banner -->
+<img src="sphowl.PNG" class="full-img" alt="Hero" loading="lazy" />
+
+<!-- 🟠 Comic of the Day -->
+<section class="comic-section">
+  <div class="comic-card">
+    <img src="spcomic1.PNG" alt="Comic of the Day" loading="lazy">
+    <div class="comic-label" id="comic-date"></div>
+    <a class="readmore" href="https://x.com/SUIPuppy" target="_blank">Read more on X</a>
   </div>
+</section>
 
-  <!-- 🟡 Hero Banner -->
-  <img src="sphowl.PNG" class="full-img" alt="Hero" loading="lazy" />
+<!-- 🔹 About Section -->
+<div style="text-align: center; margin-top: 40px;">
+  <img src="spabout.PNG" alt="About SUI Pup" style="max-width: 600px; width: 100%; border: 2px solid #d8c49c; background-color: #f4e7cd; padding: 10px;">
+</div>
 
-  <!-- 🟠 Comic of the Day -->
-  <section class="comic-section">
-    <div class="comic-card">
-      <img src="spcomic1.PNG" alt="Comic of the Day" loading="lazy" >
-      <div class="comic-label" id="comic-date"></div>
-      <a class="readmore" href="https://x.com/SUIPuppy" target="_blank">Read more on X</a>
-    </div>
-  </section>
+<!-- 🔵 How to Get Tokens -->
+<img src="spstep1.PNG" class="full-img" alt="Step 1" loading="lazy" />
+<img src="spstep2.PNG" class="full-img" alt="Step 2" loading="lazy" />
+<img src="spstep3.PNG" class="full-img" alt="Step 3" loading="lazy" />
+<img src="sptoken.PNG" class="full-img" alt="Tokenomics" loading="lazy" />
 
-  <!-- 🔹 About Section -->
-  <div style="text-align: center; margin-top: 40px;">
-    <img src="spabout.PNG" alt="About SUI Pup" style="max-width: 600px; width: 100%; border: 2px solid #d8c49c; background-color: #f4e7cd; padding: 10px;">
+<!-- 🟣 Roadmap -->
+<img src="spQ4.PNG" class="full-img" alt="Roadmap Q4" loading="lazy" />
+<img src="spQ1.PNG" class="full-img" alt="Roadmap Q1 2026" loading="lazy" />
+
+<!-- 🔥 Footer Comic -->
+<img src="spfooter.PNG" class="full-img" alt="Footer Comic" loading="lazy" />
+
+<!-- 🟢 Footer Links -->
+<div class="footer-links">
+  <a href="https://x.com/SUIPuppy" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png" alt="X" /></a>
+  <a href="https://t.me/suipupdawghaus" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" alt="Telegram" /></a>
+  <a href="https://movepump.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/link--v1.png" alt="MovePump" /></a>
+</div>
+
+<div class="copy-section">
+  © 2025 SUI Pup. All rights reserved.
+</div>
+
+<!-- 💬 Floating Join Button -->
+<a href="https://t.me/suipupdawghaus" target="_blank" class="floating-join-btn" title="Join community!">
+  Join 🐾
+</a>
+
+<!-- 🔔 SUI Pup Learns Popup -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-blur"></div>
+  <div class="popup-content">
+    <a href="https://t.me/suipupdawghaus" target="_blank">
+      <img src="splearnspopup.PNG" alt="SUI Pup Learns Announcement" />
+    </a>
+    <button id="closePopup" class="popup-close">✖</button>
   </div>
+</div>
 
-  <!-- 🔵 How to Get Tokens -->
-  <img src="spstep1.PNG" class="full-img" alt="Step 1" loading="lazy" />
-  <img src="spstep2.PNG" class="full-img" alt="Step 2" loading="lazy" />
-  <img src="spstep3.PNG" class="full-img" alt="Step 3" loading="lazy" />
+<!-- Scripts -->
+<script>
+  const dateElem = document.getElementById("comic-date");
+  const today = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  dateElem.textContent = `Comic of the Day – ${today.toLocaleDateString('en-US', options)}`;
 
-  <!-- 🟢 Tokenomics -->
-  <img src="sptoken.PNG" class="full-img" alt="Tokenomics" loading="lazy" />
+  // Popup logic: always show on load
+  window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('popup').style.display = 'flex';
+    document.body.classList.add('popup-active');
+  });
 
-  <!-- 🟣 Roadmap -->
-  <img src="sproadmap2.PNG" class="full-img" alt="Roadmap" loading="lazy" />
+  document.getElementById('closePopup').addEventListener('click', () => {
+    document.getElementById('popup').style.display = 'none';
+    document.body.classList.remove('popup-active');
+  });
+</script>
 
-  <!-- 🔥 Footer Comic -->
-  <img src="spfooter.PNG" class="full-img" alt="Footer Comic" loading="lazy" />
-
-  <!-- 🟢 Footer Links -->
-  <div class="footer-links">
-    <a href="https://x.com/SUIPuppy" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png" alt="X" /></a>
-    <a href="https://t.me/suipupdawghaus" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" alt="Telegram" /></a>
-    <a href="https://movepump.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/link--v1.png" alt="MovePump" /></a>
-  </div>
-
-  <div class="copy-section">
-    © 2025 SUI Pup. All rights reserved.
-  </div>
-
-  <!-- 💬 Floating Join Button -->
-  <a href="https://t.me/suipupdawghaus" target="_blank" class="floating-join-btn" title="Join community!">
-    Join 🐾
-  </a>
-
-  <!-- 🔔 SUI Pup Learns Popup -->
-  <div id="popup" class="popup-overlay">
-    <div class="popup-blur"></div>
-    <div class="popup-content">
-      <a href="https://t.me/suipupdawghaus" target="_blank">
-        <img src="splearnspopup.PNG" alt="SUI Pup Learns Announcement" />
-      </a>
-      <button id="closePopup" class="popup-close">✖</button>
-    </div>
-  </div>
-
-  <!-- 🗓️ Date Script -->
-  <script>
-    const dateElem = document.getElementById("comic-date");
-    const today = new Date();
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    dateElem.textContent = `Comic of the Day – ${today.toLocaleDateString('en-US', options)}`;
-  </script>
-
-  <!-- 💡 Popup Script -->
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      if (!sessionStorage.getItem('popupShown')) {
-        document.getElementById('popup').style.display = 'flex';
-        document.body.classList.add('popup-active');
-        sessionStorage.setItem('popupShown', 'true');
-      }
-    });
-
-    document.getElementById('closePopup').addEventListener('click', () => {
-      document.getElementById('popup').style.display = 'none';
-      document.body.classList.remove('popup-active');
-    });
-  </script>
 </body>
 </html>
