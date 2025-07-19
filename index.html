@@ -2,76 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SUI Pup – The People's Token</title>
-  <link rel="icon" type="image/x-icon" href="IMG_5355.ico" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Brandon+Grotesque&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <!-- 🔔 Popup -->
-  <div id="popup" class="popup-overlay">
-    <div class="popup-blur"></div>
-    <div class="popup-content">
-      <a href="https://t.me/suipupdawghaus" target="_blank">
-        <img src="splearnspopup.PNG" alt="SUI Pup Learns Popup" />
-      </a>
-    </div>
+  <!-- Popup -->
+  <div id="popup" onclick="window.location.href='https://t.me/suipupdawghaus'">
+    <img src="splearnspopup.PNG" alt="Popup">
   </div>
 
-  <!-- 💬 Floating Join Button -->
-  <a href="https://t.me/suipupdawghaus" target="_blank" class="floating-join-btn" title="Join community!">🐾</a>
+  <!-- Header -->
+  <header>
+    <h1>SUI Pup – The People's Token</h1>
+  </header>
 
-  <!-- 🔥 Hero -->
-  <div class="hero-tagline">The people’s token. The internet’s pup. 🐾</div>
-  <img src="sphowl.PNG" class="full-img" alt="Hero" loading="lazy" />
-
-  <!-- 🟠 Comic of the Day -->
-  <section class="comic-section">
-    <div class="comic-card">
-      <img src="spcomic1.PNG" alt="Comic of the Day" loading="lazy">
-      <div class="comic-label" id="comic-date"></div>
-      <a class="readmore" href="https://x.com/SUIPuppy" target="_blank">Read more on X</a>
-    </div>
+  <!-- Comic of the Day -->
+  <section class="comic-of-the-day">
+    <h2>Comic of the Day – July 19, 2025</h2>
+    <img src="spcomic1.PNG" alt="Comic of the Day">
+    <a href="https://x.com/Realmemes_on_X" class="comic-link" target="_blank">Read more on X</a>
   </section>
 
-  <!-- 🔹 About -->
-  <div class="about-section">
-    <img src="spabout.PNG" alt="About SUI Pup">
-  </div>
+  <!-- Learn Section -->
+  <section>
+    <img src="splearnspopup.PNG" alt="SUI Pup Learns" class="full-img">
+  </section>
 
-  <!-- 🔵 Steps + Tokenomics -->
-  <img src="spstep1.PNG" class="full-img" alt="Step 1" loading="lazy" />
-  <img src="spstep2.PNG" class="full-img" alt="Step 2" loading="lazy" />
-  <img src="spstep3.PNG" class="full-img" alt="Step 3" loading="lazy" />
-  <img src="sptoken.PNG" class="full-img" alt="Tokenomics" loading="lazy" />
+  <!-- Tokenomics -->
+  <section>
+    <img src="sptoken.PNG" alt="Tokenomics" class="full-img">
+  </section>
 
-  <!-- 🟣 Roadmap -->
-  <img src="spQ4.PNG" class="full-img" alt="Roadmap Q4" loading="lazy" />
-  <img src="spQ1.PNG" class="full-img" alt="Roadmap Q1 2026" loading="lazy" />
+  <!-- How to Buy -->
+  <section>
+    <img src="spstep1.PNG" alt="Step 1" class="full-img">
+    <img src="spstep2.PNG" alt="Step 2" class="full-img">
+    <img src="spstep3.PNG" alt="Step 3" class="full-img">
+  </section>
 
-  <!-- 🔥 Footer Comic -->
-  <img src="spfooter.PNG" class="full-img" alt="Footer Comic" loading="lazy" />
+  <!-- Roadmap -->
+  <section>
+    <img src="spQ4.PNG" alt="Q4 Roadmap" class="full-img">
+    <img src="spQ1.PNG" alt="Q1 Roadmap" class="full-img">
+  </section>
 
-  <!-- 🔗 Footer Links -->
-  <div class="footer-links">
-    <a href="https://x.com/SUIPuppy" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitterx--v1.png" alt="X" /></a>
-    <a href="https://t.me/suipupdawghaus" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" alt="Telegram" /></a>
-    <a href="https://movepump.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/link--v1.png" alt="MovePump" /></a>
-  </div>
+  <!-- About -->
+  <section>
+    <img src="spabout.PNG" alt="About" class="full-img">
+  </section>
 
-  <div class="copy-section">© 2025 SUI Pup. All rights reserved.</div>
+  <!-- Footer -->
+  <footer>
+    <img src="spfooter.PNG" alt="Footer" class="full-img">
+    <div class="footer-links">
+      <a href="https://t.me/suipupdawghaus" target="_blank">📨</a>
+      <a href="https://x.com/SUIPuppy" target="_blank">✈️</a>
+      <a href="https://movepump.com/" target="_blank">🔗</a>
+    </div>
+    <p>© 2025 SUI Pup. All rights reserved.</p>
+  </footer>
 
+  <!-- Floating Join Button -->
+  <a href="https://t.me/suipupdawghaus" class="floating-btn" title="Join community!">🐾</a>
+
+  <!-- Script to show popup every time -->
   <script>
-    const dateElem = document.getElementById("comic-date");
-    const today = new Date();
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    dateElem.textContent = `Comic of the Day – ${today.toLocaleDateString('en-US', options)}`;
-
-    // Popup logic: show every time
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('popup').style.display = 'flex';
-    });
+    window.onload = () => {
+      const popup = document.getElementById("popup");
+      popup.style.display = "block";
+    };
   </script>
 </body>
 </html>
