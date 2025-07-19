@@ -172,5 +172,30 @@
 <a href="https://t.me/suipupdawghaus" target="_blank" class="floating-join-btn" title="Join community!">
   Join 🐾
 </a>
+  <!-- 🔔 SUI Pup Learns Popup -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-blur"></div>
+  <div class="popup-content">
+    <a href="https://t.me/suipupdawghaus" target="_blank">
+      <img src="splearnspopup.PNG" alt="SUI Pup Learns Announcement" />
+    </a>
+    <button id="closePopup" class="popup-close">✖</button>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!sessionStorage.getItem('popupShown')) {
+      document.getElementById('popup').style.display = 'flex';
+      document.body.classList.add('popup-active');
+      sessionStorage.setItem('popupShown', 'true');
+    }
+  });
+
+  document.getElementById('closePopup').addEventListener('click', () => {
+    document.getElementById('popup').style.display = 'none';
+    document.body.classList.remove('popup-active');
+  });
+</script>
 </body>
 </html>
