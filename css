@@ -1,12 +1,17 @@
-body {
-  background-color: #f4e7cd;
-  font-family: 'Brandon Grotesque', sans-serif;
+/* 🌙 Base Styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Brandon Grotesque', sans-serif;
+  background-color: #f4e7cd;
   overflow-x: hidden;
 }
 
-/* Tagline */
+/* 🔥 Hero */
 .hero-tagline {
   font-size: 28px;
   font-weight: bold;
@@ -23,11 +28,13 @@ body {
   }
 }
 
+/* 📸 Full Image */
 .full-img {
   width: 100%;
   display: block;
 }
 
+/* 📘 Comic */
 .comic-section {
   text-align: center;
   padding: 20px 0;
@@ -60,9 +67,10 @@ body {
   color: #337ab7;
 }
 
+/* 🔹 About */
 .about-section {
   text-align: center;
-  margin: 40px auto;
+  margin-top: 40px;
 }
 
 .about-section img {
@@ -73,6 +81,7 @@ body {
   padding: 10px;
 }
 
+/* 🔗 Footer */
 .footer-links {
   display: flex;
   justify-content: center;
@@ -93,6 +102,13 @@ body {
   color: #444;
 }
 
+@media (max-width: 768px) {
+  .comic-card {
+    margin: 0 15px;
+  }
+}
+
+/* 💬 Floating Button */
 .floating-join-btn {
   position: fixed;
   right: 20px;
@@ -123,7 +139,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .popup-blur {
@@ -152,19 +168,4 @@ body {
   border-radius: 12px;
   border: 3px solid #444;
   background-color: #f4e7cd;
-}
-
-.popup-close {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  background: #fff;
-  border: none;
-  font-size: 20px;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  z-index: 3;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
