@@ -1,91 +1,61 @@
-body {
+/* ✅ BASE STYLES */
+* {
   margin: 0;
-  background-color: #f4e7cd;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: 'Brandon Grotesque', sans-serif;
+  background-color: #f4e7cd;
   overflow-x: hidden;
 }
-
-header h1 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 1.2rem 1rem 0.8rem;
-  color: #222;
-}
-
-section {
+img.section {
   width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.full-img {
-  width: 100%;
-  height: auto;
   display: block;
+  margin: 0 auto;
 }
 
-footer {
-  text-align: center;
-  font-size: 0.8rem;
-  padding: 1rem;
-  background-color: #f4e7cd;
-}
-
-.footer-links {
-  margin-top: 0.5rem;
-}
-
-.footer-links a {
-  margin: 0 0.5rem;
-  font-size: 1.4rem;
-  text-decoration: none;
-}
-
-.floating-btn {
-  position: fixed;
-  right: 15px;
-  bottom: 20px;
-  background: #222;
-  color: #fff;
-  font-size: 1.8rem;
-  padding: 0.4rem 0.75rem;
-  border-radius: 50%;
-  z-index: 999;
-  text-decoration: none;
-}
-
+/* ✅ POPUP */
 #popup {
-  display: none;
   position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(244, 231, 205, 0.97);
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
-
-#popup img {
-  width: 100%;
-  height: auto;
-  display: block;
+#popup-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-.comic-of-the-day {
+/* ✅ FLOATING JOIN BUTTON */
+#join-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 32px;
+  background: #f4e7cd;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 5px #00000044;
+  z-index: 999;
+}
+
+/* ✅ FOOTER SOCIAL LINKS */
+#footer-links {
+  width: 100%;
   text-align: center;
-  padding: 1rem;
+  font-size: 14px;
+  margin: 10px 0 20px;
 }
-
-.comic-of-the-day h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.comic-link {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #333;
-  text-decoration: underline;
+#footer-links a {
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 20px;
 }
