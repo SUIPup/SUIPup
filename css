@@ -6,6 +6,8 @@ body {
 }
 
 .container {
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,9 +15,27 @@ body {
 }
 
 .full-img {
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: block;
+}
+
+/* X social link style */
+.social {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social a {
+  color: #1d1d1f;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social a:hover {
+  text-decoration: underline;
 }
 
 /* Floating Join Button */
@@ -23,19 +43,19 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
-  z-index: 1000;
+  width: 72px;
+  height: 72px;
+  z-index: 999;
 }
 
 .join-btn img {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: transform 0.2s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
 }
 
 .join-btn:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
