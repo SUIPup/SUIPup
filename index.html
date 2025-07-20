@@ -4,74 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SUI Pup – The People's Token</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Brandon+Grotesque&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Popup -->
-  <div id="popup" onclick="window.location.href='https://t.me/suipupdawghaus'">
-    <img src="splearnspopup.PNG" alt="Popup">
+  <!-- 🧠 POPUP -->
+  <div id="popup">
+    <img src="splearnspopup.PNG" alt="Learn Popup" id="popup-image" />
   </div>
 
-  <!-- Header -->
-  <header>
-    <h1>SUI Pup – The People's Token</h1>
-  </header>
+  <!-- 🐾 FLOATING JOIN BUTTON -->
+  <a href="https://t.me/suipupdawghaus" id="join-button" title="Join community!">🐾</a>
 
-  <!-- Comic of the Day -->
-  <section class="comic-of-the-day">
-    <h2>Comic of the Day – July 19, 2025</h2>
-    <img src="spcomic1.PNG" alt="Comic of the Day">
-    <a href="https://x.com/Realmemes_on_X" class="comic-link" target="_blank">Read more on X</a>
-  </section>
+  <!-- 🖼️ FULL PAGE IMAGES -->
+  <img src="sp_howl.PNG" alt="Hero" class="section" />
+  <img src="spcomic1.PNG" alt="Comic of the Day" class="section" />
+  <img src="splearnspopup.PNG" alt="Learn Popup Static" class="section" />
+  <img src="sptoken.PNG" alt="Tokenomics" class="section" />
+  <img src="spstep1.PNG" alt="Step 1" class="section" />
+  <img src="spstep2.PNG" alt="Step 2" class="section" />
+  <img src="spstep3.PNG" alt="Step 3" class="section" />
+  <img src="spQ4.PNG" alt="Roadmap Q4" class="section" />
+  <img src="spQ1.PNG" alt="Roadmap Q1" class="section" />
+  <img src="spabout.PNG" alt="About" class="section" />
+  <img src="spfooter.PNG" alt="Footer" class="section" />
 
-  <!-- Learn Section -->
-  <section>
-    <img src="splearnspopup.PNG" alt="SUI Pup Learns" class="full-img">
-  </section>
-
-  <!-- Tokenomics -->
-  <section>
-    <img src="sptoken.PNG" alt="Tokenomics" class="full-img">
-  </section>
-
-  <!-- How to Buy -->
-  <section>
-    <img src="spstep1.PNG" alt="Step 1" class="full-img">
-    <img src="spstep2.PNG" alt="Step 2" class="full-img">
-    <img src="spstep3.PNG" alt="Step 3" class="full-img">
-  </section>
-
-  <!-- Roadmap -->
-  <section>
-    <img src="spQ4.PNG" alt="Q4 Roadmap" class="full-img">
-    <img src="spQ1.PNG" alt="Q1 Roadmap" class="full-img">
-  </section>
-
-  <!-- About -->
-  <section>
-    <img src="spabout.PNG" alt="About" class="full-img">
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <img src="spfooter.PNG" alt="Footer" class="full-img">
-    <div class="footer-links">
-      <a href="https://t.me/suipupdawghaus" target="_blank">📨</a>
-      <a href="https://x.com/SUIPuppy" target="_blank">✈️</a>
-      <a href="https://movepump.com/" target="_blank">🔗</a>
-    </div>
+  <!-- ⬇️ SOCIAL LINKS IN FOOTER -->
+  <footer id="footer-links">
+    <a href="https://x.com/SUIPuppy" target="_blank">✈️</a>
+    <a href="https://t.me/suipupdawghaus" target="_blank">📎</a>
     <p>© 2025 SUI Pup. All rights reserved.</p>
   </footer>
 
-  <!-- Floating Join Button -->
-  <a href="https://t.me/suipupdawghaus" class="floating-btn" title="Join community!">🐾</a>
-
-  <!-- Script to show popup every time -->
+  <!-- 💥 POPUP SCRIPT -->
   <script>
-    window.onload = () => {
+    window.onload = function () {
       const popup = document.getElementById("popup");
-      popup.style.display = "block";
+      const img = document.getElementById("popup-image");
+
+      popup.style.display = "flex";
+      popup.onclick = () => {
+        window.location.href = "https://t.me/suipupdawghaus";
+      };
     };
   </script>
 </body>
