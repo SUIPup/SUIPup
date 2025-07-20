@@ -1,61 +1,41 @@
-/* ✅ BASE STYLES */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Brandon Grotesque', sans-serif;
   background-color: #f4e7cd;
-  overflow-x: hidden;
+  font-family: 'Brandon Grotesque', 'Segoe UI', sans-serif;
 }
-img.section {
+
+.container {
   width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-/* ✅ POPUP */
-#popup {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  z-index: 1000;
-}
-#popup-image {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
-/* ✅ FLOATING JOIN BUTTON */
-#join-button {
+.full-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Floating Join Button */
+.join-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-size: 32px;
-  background: #f4e7cd;
-  border-radius: 50%;
-  padding: 10px;
-  text-decoration: none;
-  box-shadow: 0 0 5px #00000044;
-  z-index: 999;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
 }
 
-/* ✅ FOOTER SOCIAL LINKS */
-#footer-links {
+.join-btn img {
   width: 100%;
-  text-align: center;
-  font-size: 14px;
-  margin: 10px 0 20px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
 }
-#footer-links a {
-  text-decoration: none;
-  margin: 0 8px;
-  font-size: 20px;
+
+.join-btn:hover img {
+  transform: scale(1.05);
 }
