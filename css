@@ -88,3 +88,20 @@ html, body {
     overflow-x: hidden;
   }
 }
+.social {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social a {
+  color: #1d1d1f;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Brandon Grotesque', 'Segoe UI', sans-serif;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
