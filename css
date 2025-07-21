@@ -1,52 +1,34 @@
-
-
-body, html {
+/* GLOBAL RESET */
+html, body {
   margin: 0;
   padding: 0;
   background-color: #f4e7cd;
   font-family: 'Brandon Grotesque', 'Segoe UI', sans-serif;
+  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
+/* MAIN IMAGE WRAPPER */
 .container {
   width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* FINAL image fix */
+/* RESPONSIVE IMAGES */
 .full-img {
   width: 100%;
-  max-width: 100%;
   height: auto;
+  max-height: 100vh;
   display: block;
-  margin: 0 auto;
+  object-fit: contain;
 }
 
-/* X social link style */
-.social {
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.social a {
-  color: #1d1d1f;
-  font-size: 1.1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.social a:hover {
-  text-decoration: underline;
-}
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-/* Floating Join Button */
+/* FLOATING JOIN BUTTON */
 .join-btn {
   position: fixed;
   bottom: 20px;
@@ -60,48 +42,43 @@ html, body {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  transition: transform 0.2s ease;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease;
 }
 
 .join-btn:hover img {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-  .full-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 95vh;
-    object-fit: contain;
-  }
-
-  .container {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-}
+/* X LINK */
 .social {
   width: 100%;
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0 20px;
 }
 
 .social a {
   color: #1d1d1f;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  font-family: 'Brandon Grotesque', 'Segoe UI', sans-serif;
 }
 
 .social a:hover {
   text-decoration: underline;
 }
+
+/* MOBILE OPTIMIZATION */
+@media screen and (max-width: 768px) {
+  .join-btn {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .social a {
+    font-size: 1rem;
+  }
+}
+
