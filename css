@@ -15,9 +15,10 @@ body {
 }
 
 .full-img {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
 }
 
 /* X social link style */
