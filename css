@@ -38,7 +38,10 @@ body {
 .social a:hover {
   text-decoration: underline;
 }
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* Floating Join Button */
 .join-btn {
   position: fixed;
