@@ -67,3 +67,24 @@ html, body {
 .join-btn:hover img {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+  .full-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 95vh;
+    object-fit: contain;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
