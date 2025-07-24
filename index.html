@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUI Pup – The People's Token</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Brandon Grotesque', sans-serif;
+      background-color: #f4e7cd;
+    }
+    .section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 64px;
+      height: 64px;
+      z-index: 1000;
+    }
+    .floating-btn img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 768px) {
+      .section img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <img src="sphowl.PNG" alt="Hero" class="full-img" loading="lazy" />
-    <img src="spcomic1.PNG" alt="Comic of the Day" class="full-img" loading="lazy" />
-  
-    <img src="sptoken.PNG" alt="Tokenomics" class="full-img" loading="lazy" />
-    <img src="spstep1.PNG" alt="Step 1" class="full-img" loading="lazy" />
-    <img src="spstep2.PNG" alt="Step 2" class="full-img" loading="lazy" />
-    <img src="spstep3.PNG" alt="Step 3" class="full-img" loading="lazy" />
-    <img src="spQ4.PNG" alt="Q4 Roadmap" class="full-img" loading="lazy" />
-    <img src="spQ1.PNG" alt="Q1 Roadmap" class="full-img" loading="lazy" />
-    <img src="spabout.PNG" alt="About" class="full-img" loading="lazy" />
 
-    <!-- 🐦 X Link -->
-    <div class="social">
-      <a href="https://x.com/SUIPuppy" target="_blank" title="Follow us on X">🐦 Follow us on X</a>
-    </div>
+  <div class="section"><img src="spmoon.PNG" alt="SP on dock at night"></div>
+  <div class="section"><img src="spmed.PNG" alt="SP meditating at waterfall"></div>
+  <div class="section"><img src="sphowl.PNG" alt="SP howling at moon"></div>
+  <div class="section"><img src="spgang.PNG" alt="SP and friends surfing"></div>
+  <div class="section"><img src="sphowto.PNG" alt="How to join scroll"></div>
+  <div class="section"><img src="spdisclaimer.PNG" alt="Disclaimer panel"></div>
+  <div class="section"><img src="spfooter.PNG" alt="Underwater footer background"></div>
 
-    <img src="spfooter.PNG" alt="Footer" class="full-img" loading="lazy" />
-  </div>
-
-  <!-- 🐾 Floating Join Button -->
-  <a href="https://t.me/suipupdawghaus" class="join-btn" title="Join community!">
-    <img src="spjoinbutton.png" alt="Join" />
+  <a class="floating-btn" href="https://t.me/suipupdawghaus" target="_blank">
+    <img src="spjoinbutton.png" alt="Join Button">
   </a>
+
 </body>
 </html>
